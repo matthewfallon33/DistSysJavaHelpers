@@ -18,7 +18,7 @@ public class LogReader extends TraceFileReaderFoundation {
 
 		String[] splitLine = line.split("\\s+");
 
-		if (line.split(" ").length == 4) {
+		if (splitLine.length == 4) {
 			// System.out.println("Line length 4!");
 			if (!isDate(splitLine[0])) {
 				System.out.println("First Line entry must be of valid time format");
@@ -86,9 +86,9 @@ public class LogReader extends TraceFileReaderFoundation {
 		float duration = Float.parseFloat(frags[1]);
 		// System.out.println(arrTime);
 		// System.out.println("Arrival Time in Seconds: " + arrTime/1000);
-		// System.out.println("Job Duration: " + duration);
+//		 System.out.println("Job Duration: " + duration);
 		long longDuration = Math.round(duration);
-		// System.out.println("Rounded Job Duration: " + longDuration);
+//		 System.out.println("Rounded Job Duration: " + longDuration);
 		// Job job = new Job();
 		return jobCreator.newInstance(frags[2], Long.parseLong(frags[0]), 0, longDuration, 1, 0, 512, null, null,
 				frags[3], null, 0);
