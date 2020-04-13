@@ -1,27 +1,3 @@
-/*
- *  ========================================================================
- *  Helper classes to support simulations of large scale distributed systems
- *  ========================================================================
- *  
- *  This file is part of DistSysJavaHelpers.
- *  
- *    DistSysJavaHelpers is free software: you can redistribute it and/or modify
- *    it under the terms of the GNU General Public License as published by
- *    the Free Software Foundation, either version 3 of the License, or
- *    (at your option) any later version.
- *
- *   DistSysJavaHelpers is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
- * 
- *  (C) Copyright 2016, Gabor Kecskemeti (g.kecskemeti@ljmu.ac.uk)
- *  (C) Copyright 2012-2015, Gabor Kecskemeti (kecskemeti.gabor@sztaki.mta.hu)
- */
-
 package hu.mta.sztaki.lpds.cloud.simulator.helpers.trace;
 
 import java.io.File;
@@ -35,14 +11,7 @@ import hu.mta.sztaki.lpds.cloud.simulator.helpers.trace.file.SWFReader;
 import hu.mta.sztaki.lpds.cloud.simulator.helpers.trace.filters.Ignore;
 import hu.mta.sztaki.lpds.cloud.simulator.helpers.trace.random.SimpleRandomTraceGenerator;
 
-/**
- * Allows easy setup of trace producers from files.
- * 
- * @author "Gabor Kecskemeti, Department of Computer Science, Liverpool John
- *         Moores University, (c) 2016"
- * @author "Gabor Kecskemeti, Laboratory of Parallel and Distributed Systems,
- *         MTA SZTAKI (c) 2016"
- */
+
 public class FileBasedTraceProducerFactory {
 	/**
 	 * Ensures the correct parser loads the trace file based on file name
